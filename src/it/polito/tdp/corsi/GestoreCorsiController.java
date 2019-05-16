@@ -74,7 +74,7 @@ public class GestoreCorsiController {
     @FXML
     void doCercaCorsi(ActionEvent event) {
     	int periodo;
-    	try {
+    	try { //lo metto nel try solo perché devo fare un controllo per l'utente
     		periodo = Integer.parseInt(txtPeriodo.getText());
     	} catch (NumberFormatException e) {
     		txtResult.appendText("Devi inserire un periodo (1 o 2)");
